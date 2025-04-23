@@ -35,5 +35,11 @@ namespace OCSSCESu
         {
             Application.ExitThread();
         }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+            FrmUserAuthentication frmAuth = new FrmUserAuthentication();
+            frmAuth.ShowDialog(this);
+        }
     }
 }

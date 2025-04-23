@@ -16,5 +16,15 @@ namespace OCSSCESu
         {
             InitializeComponent();
         }
+
+        private void FrmUserAuthentication_Load(object sender, EventArgs e)
+        {
+            formShadow.SetShadowForm(this);
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

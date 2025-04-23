@@ -35,7 +35,7 @@ namespace OCSSCESu
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMockup());
+            Application.Run(new FrmVoting());
         }
     }
 }

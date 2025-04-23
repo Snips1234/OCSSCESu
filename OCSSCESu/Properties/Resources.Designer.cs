@@ -143,6 +143,16 @@ namespace OCSSCESu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Check_Mark_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Check_Mark_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_circled_user_male_skin_type_7_480px {
             get {
                 object obj = ResourceManager.GetObject("icons8_circled_user_male_skin_type_7_480px", resourceCulture);
@@ -193,6 +203,16 @@ namespace OCSSCESu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_filled_circle_96px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_filled_circle_96px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_info_squared_96px {
             get {
                 object obj = ResourceManager.GetObject("icons8_info_squared_96px", resourceCulture);
@@ -226,6 +246,16 @@ namespace OCSSCESu.Properties {
         internal static System.Drawing.Bitmap icons8_name_64px {
             get {
                 object obj = ResourceManager.GetObject("icons8_name_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_no_image_120px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_no_image_120px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +336,26 @@ namespace OCSSCESu.Properties {
         internal static System.Drawing.Bitmap icons8_user_male_52px {
             get {
                 object obj = ResourceManager.GetObject("icons8_user_male_52px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_verified_account_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_verified_account_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_verified_account_96px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_verified_account_96px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

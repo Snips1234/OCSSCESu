@@ -109,6 +109,7 @@
             this.startBtn.Size = new System.Drawing.Size(292, 45);
             this.startBtn.TabIndex = 29;
             this.startBtn.Text = "Start Voting";
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // guna2PictureBox1
             // 
