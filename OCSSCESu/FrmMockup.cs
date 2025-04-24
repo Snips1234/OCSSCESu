@@ -38,7 +38,7 @@ namespace OCSSCESu
 
         private void startBtn_Click(object sender, EventArgs e)
         {
-            FrmUserAuthentication frmAuth = new FrmUserAuthentication();
+            FrmUserAuthentication frmAuth = new FrmUserAuthentication(this);
             frmAuth.ShowDialog(this);
         }
     }

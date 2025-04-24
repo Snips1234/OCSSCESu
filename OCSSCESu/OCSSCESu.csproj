@@ -111,6 +111,12 @@
     <Compile Include="FrmConfig.Designer.cs">
       <DependentUpon>FrmConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoadingScreen.Designer.cs">
+      <DependentUpon>FrmLoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVoting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,8 @@
     <Compile Include="FrmUserAuthentication.Designer.cs">
       <DependentUpon>FrmUserAuthentication.cs</DependentUpon>
     </Compile>
+    <Compile Include="helper\AppState.cs" />
+    <Compile Include="helper\AsycCRUD.cs" />
     <Compile Include="helper\CRUD.cs" />
     <Compile Include="helper\DatabaseHelper.cs" />
     <Compile Include="helper\PasswordHasher.cs" />
@@ -143,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="FrmConfig.resx">
       <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoadingScreen.resx">
+      <DependentUpon>FrmLoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVoting.resx">
       <DependentUpon>FrmVoting.cs</DependentUpon>
@@ -293,6 +304,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_no_image_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_left_arrow_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_right_arrow_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
