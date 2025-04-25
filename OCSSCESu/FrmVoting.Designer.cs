@@ -31,17 +31,21 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.submissionIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.submissionProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.reviewIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.reviewProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.executiveIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.executiveProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.legislativeIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.legislativeProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -49,21 +53,17 @@
             this.currentVotingPhase = new System.Windows.Forms.Label();
             this.previousButton = new Guna.UI2.WinForms.Guna2Button();
             this.nextButton = new Guna.UI2.WinForms.Guna2Button();
-            this.submissionIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.reviewIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.executiveIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.legislativeIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionIcon)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewIcon)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.submissionIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reviewIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.executiveIcon)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.legislativeIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +85,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1109, 113);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Visible = false;
             // 
             // guna2Panel4
             // 
@@ -110,6 +111,21 @@
             this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
             this.guna2Panel7.Size = new System.Drawing.Size(278, 113);
             this.guna2Panel7.TabIndex = 2;
+            // 
+            // submissionIcon
+            // 
+            this.submissionIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.submissionIcon.BackColor = System.Drawing.Color.Transparent;
+            this.submissionIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
+            this.submissionIcon.Location = new System.Drawing.Point(124, 49);
+            this.submissionIcon.Name = "submissionIcon";
+            this.submissionIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.submissionIcon.ShadowDecoration.Parent = this.submissionIcon;
+            this.submissionIcon.Size = new System.Drawing.Size(30, 30);
+            this.submissionIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.submissionIcon.TabIndex = 2;
+            this.submissionIcon.TabStop = false;
+            this.submissionIcon.UseTransparentBackground = true;
             // 
             // submissionProgressBar
             // 
@@ -163,6 +179,21 @@
             this.guna2Panel6.Size = new System.Drawing.Size(277, 113);
             this.guna2Panel6.TabIndex = 2;
             // 
+            // reviewIcon
+            // 
+            this.reviewIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reviewIcon.BackColor = System.Drawing.Color.Transparent;
+            this.reviewIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
+            this.reviewIcon.Location = new System.Drawing.Point(123, 49);
+            this.reviewIcon.Name = "reviewIcon";
+            this.reviewIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.reviewIcon.ShadowDecoration.Parent = this.reviewIcon;
+            this.reviewIcon.Size = new System.Drawing.Size(30, 30);
+            this.reviewIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reviewIcon.TabIndex = 2;
+            this.reviewIcon.TabStop = false;
+            this.reviewIcon.UseTransparentBackground = true;
+            // 
             // reviewProgressBar
             // 
             this.reviewProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,6 +246,21 @@
             this.guna2Panel5.Size = new System.Drawing.Size(277, 113);
             this.guna2Panel5.TabIndex = 2;
             // 
+            // executiveIcon
+            // 
+            this.executiveIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.executiveIcon.BackColor = System.Drawing.Color.Transparent;
+            this.executiveIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
+            this.executiveIcon.Location = new System.Drawing.Point(123, 49);
+            this.executiveIcon.Name = "executiveIcon";
+            this.executiveIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.executiveIcon.ShadowDecoration.Parent = this.executiveIcon;
+            this.executiveIcon.Size = new System.Drawing.Size(30, 30);
+            this.executiveIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.executiveIcon.TabIndex = 2;
+            this.executiveIcon.TabStop = false;
+            this.executiveIcon.UseTransparentBackground = true;
+            // 
             // executiveProgressBar
             // 
             this.executiveProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -256,6 +302,21 @@
             this.guna2Panel1.Size = new System.Drawing.Size(277, 113);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // legislativeIcon
+            // 
+            this.legislativeIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.legislativeIcon.BackColor = System.Drawing.Color.Transparent;
+            this.legislativeIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
+            this.legislativeIcon.Location = new System.Drawing.Point(123, 49);
+            this.legislativeIcon.Name = "legislativeIcon";
+            this.legislativeIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.legislativeIcon.ShadowDecoration.Parent = this.legislativeIcon;
+            this.legislativeIcon.Size = new System.Drawing.Size(30, 30);
+            this.legislativeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.legislativeIcon.TabIndex = 2;
+            this.legislativeIcon.TabStop = false;
+            this.legislativeIcon.UseTransparentBackground = true;
+            // 
             // legislativeProgressBar
             // 
             this.legislativeProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -282,7 +343,6 @@
             this.label1.Size = new System.Drawing.Size(174, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "LEGISLATIVE COUNCIL";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Separator1
             // 
@@ -317,7 +377,6 @@
             this.currentVotingPhase.TabIndex = 1;
             this.currentVotingPhase.Text = "PRESEDENT";
             this.currentVotingPhase.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.currentVotingPhase.Click += new System.EventHandler(this.label1_Click);
             // 
             // previousButton
             // 
@@ -344,6 +403,8 @@
             this.previousButton.Text = "PREVIOUS";
             this.previousButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.previousButton.TextOffset = new System.Drawing.Point(-30, 0);
+            this.previousButton.Visible = false;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // nextButton
             // 
@@ -370,66 +431,7 @@
             this.nextButton.Text = "NEXT";
             this.nextButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.nextButton.TextOffset = new System.Drawing.Point(50, 0);
-            // 
-            // submissionIcon
-            // 
-            this.submissionIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.submissionIcon.BackColor = System.Drawing.Color.Transparent;
-            this.submissionIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
-            this.submissionIcon.Location = new System.Drawing.Point(124, 49);
-            this.submissionIcon.Name = "submissionIcon";
-            this.submissionIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.submissionIcon.ShadowDecoration.Parent = this.submissionIcon;
-            this.submissionIcon.Size = new System.Drawing.Size(30, 30);
-            this.submissionIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.submissionIcon.TabIndex = 2;
-            this.submissionIcon.TabStop = false;
-            this.submissionIcon.UseTransparentBackground = true;
-            // 
-            // reviewIcon
-            // 
-            this.reviewIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.reviewIcon.BackColor = System.Drawing.Color.Transparent;
-            this.reviewIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
-            this.reviewIcon.Location = new System.Drawing.Point(123, 49);
-            this.reviewIcon.Name = "reviewIcon";
-            this.reviewIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.reviewIcon.ShadowDecoration.Parent = this.reviewIcon;
-            this.reviewIcon.Size = new System.Drawing.Size(30, 30);
-            this.reviewIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.reviewIcon.TabIndex = 2;
-            this.reviewIcon.TabStop = false;
-            this.reviewIcon.UseTransparentBackground = true;
-            // 
-            // executiveIcon
-            // 
-            this.executiveIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.executiveIcon.BackColor = System.Drawing.Color.Transparent;
-            this.executiveIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
-            this.executiveIcon.Location = new System.Drawing.Point(123, 49);
-            this.executiveIcon.Name = "executiveIcon";
-            this.executiveIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.executiveIcon.ShadowDecoration.Parent = this.executiveIcon;
-            this.executiveIcon.Size = new System.Drawing.Size(30, 30);
-            this.executiveIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.executiveIcon.TabIndex = 2;
-            this.executiveIcon.TabStop = false;
-            this.executiveIcon.UseTransparentBackground = true;
-            // 
-            // legislativeIcon
-            // 
-            this.legislativeIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.legislativeIcon.BackColor = System.Drawing.Color.Transparent;
-            this.legislativeIcon.Image = global::OCSSCESu.Properties.Resources.icons8_filled_circle_96px_1;
-            this.legislativeIcon.Location = new System.Drawing.Point(123, 49);
-            this.legislativeIcon.Name = "legislativeIcon";
-            this.legislativeIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.legislativeIcon.ShadowDecoration.Parent = this.legislativeIcon;
-            this.legislativeIcon.Size = new System.Drawing.Size(30, 30);
-            this.legislativeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.legislativeIcon.TabIndex = 2;
-            this.legislativeIcon.TabStop = false;
-            this.legislativeIcon.UseTransparentBackground = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // FrmVoting
             // 
@@ -457,17 +459,17 @@
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionIcon)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewIcon)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.executiveIcon)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.submissionIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reviewIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.executiveIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.legislativeIcon)).EndInit();
             this.ResumeLayout(false);
 

@@ -38,10 +38,6 @@
             this.uniqueCodeText = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.saveButton = new Guna.UI2.WinForms.Guna2Button();
-            this.yearLevel = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.course = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // formDragControl
@@ -163,7 +159,7 @@
             this.saveButton.Image = global::OCSSCESu.Properties.Resources.icons8_verified_account_96px;
             this.saveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.saveButton.ImageSize = new System.Drawing.Size(30, 30);
-            this.saveButton.Location = new System.Drawing.Point(17, 356);
+            this.saveButton.Location = new System.Drawing.Point(17, 234);
             this.saveButton.Name = "saveButton";
             this.saveButton.ShadowDecoration.Parent = this.saveButton;
             this.saveButton.Size = new System.Drawing.Size(366, 66);
@@ -171,90 +167,13 @@
             this.saveButton.Text = "Verify";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // yearLevel
-            // 
-            this.yearLevel.BackColor = System.Drawing.Color.Transparent;
-            this.yearLevel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.yearLevel.BorderRadius = 8;
-            this.yearLevel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.yearLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.yearLevel.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.yearLevel.FocusedColor = System.Drawing.Color.Empty;
-            this.yearLevel.FocusedState.Parent = this.yearLevel;
-            this.yearLevel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.yearLevel.FormattingEnabled = true;
-            this.yearLevel.HoverState.Parent = this.yearLevel;
-            this.yearLevel.ItemHeight = 30;
-            this.yearLevel.Items.AddRange(new object[] {
-            "1st",
-            "2nd",
-            "3rd",
-            "4th"});
-            this.yearLevel.ItemsAppearance.Parent = this.yearLevel;
-            this.yearLevel.Location = new System.Drawing.Point(17, 230);
-            this.yearLevel.Name = "yearLevel";
-            this.yearLevel.ShadowDecoration.Parent = this.yearLevel;
-            this.yearLevel.Size = new System.Drawing.Size(366, 36);
-            this.yearLevel.TabIndex = 19;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 208);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 19);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Year Level";
-            // 
-            // course
-            // 
-            this.course.BackColor = System.Drawing.Color.Transparent;
-            this.course.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.course.BorderRadius = 8;
-            this.course.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.course.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.course.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.course.FocusedColor = System.Drawing.Color.Empty;
-            this.course.FocusedState.Parent = this.course;
-            this.course.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.course.FormattingEnabled = true;
-            this.course.HoverState.Parent = this.course;
-            this.course.ItemHeight = 30;
-            this.course.Items.AddRange(new object[] {
-            "BSCS",
-            "CABA",
-            "HRM",
-            "CRIM",
-            "EDUC"});
-            this.course.ItemsAppearance.Parent = this.course;
-            this.course.Location = new System.Drawing.Point(17, 298);
-            this.course.Name = "course";
-            this.course.ShadowDecoration.Parent = this.course;
-            this.course.Size = new System.Drawing.Size(366, 36);
-            this.course.TabIndex = 19;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 19);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Course";
-            // 
             // FrmUserAuthentication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(395, 449);
-            this.Controls.Add(this.course);
-            this.Controls.Add(this.yearLevel);
+            this.ClientSize = new System.Drawing.Size(395, 346);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.uniqueCodeText);
@@ -286,9 +205,5 @@
         private Guna.UI2.WinForms.Guna2TextBox uniqueCodeText;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button saveButton;
-        private Guna.UI2.WinForms.Guna2ComboBox yearLevel;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox course;
-        private System.Windows.Forms.Label label3;
     }
 }

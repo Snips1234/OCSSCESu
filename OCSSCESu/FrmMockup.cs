@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OCSSCESu.helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace OCSSCESu
 
         private void FrmMockup_Load(object sender, EventArgs e) 
         {
-
+            //MessageBox.Show($"Candidates found: {AppState.Instance.CandidatesTable.Rows.Count}", "Debug");
         }
 
         private void FrmMockup_KeyDown(object sender, KeyEventArgs e)

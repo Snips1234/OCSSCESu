@@ -11,21 +11,21 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace OCSSCESu
 {
-  
+
 
     public partial class UCCandidate : UserControl
 
     {
-        //private string _candidateName;
-        //private string _candidatePosition;
-        //private string _candidateId;
-        //private string _candidateYearLevel;
-        //private Image _candidateImage;
+        public event EventHandler CandidateCheckedChanged;
+        public Guna.UI2.WinForms.Guna2CustomCheckBox CandidateCheckBox => checkBox;
+        private bool suppressEvent = false;
+
 
         public UCCandidate()
         {
             InitializeComponent();
         }
+
 
         public string CandidateName
         {
@@ -37,6 +37,12 @@ namespace OCSSCESu
         {
             get { return candidateYearLevel.Text; }
             set { candidateYearLevel.Text = value; }
+        }
+
+        public string CandidateCourse
+        {
+            get { return courseLabel.Text; }
+            set { courseLabel.Text = value; }
         }
 
         public Image CandidateImage
@@ -51,15 +57,45 @@ namespace OCSSCESu
             set { candidateId.Text = value; }
         }
 
-        private void candidateYearLevel_Click(object sender, EventArgs e)
+        public bool CandidateSelected
         {
-            if(checkBox.Checked)
+            get { return checkBox.Checked; }
+            set { checkBox.Checked = value; }
+        }
+
+        private void on_Click(object sender, EventArgs e)
+        {
+            this.Click += (s, evt) => checkBox.Checked = true;
+            foreach (Control ctrl in this.Controls)
             {
-                checkBox.Checked = false;
-            }else
+                ctrl.Click += (s, evt) => // ✅ fixed
+                {
+                    checkBox.Checked = true;
+                };
+            }
+
+
+        }
+
+
+
+        public void SetCheckedSilent(bool value)
+        {
+            suppressEvent = true;
+            checkBox.Checked = value;
+            suppressEvent = false;
+        }
+
+
+
+        private void checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!suppressEvent)
             {
-                checkBox.Checked = true;
+                CandidateCheckedChanged?.Invoke(this, EventArgs.Empty);
             }
         }
+
+
     }
 }

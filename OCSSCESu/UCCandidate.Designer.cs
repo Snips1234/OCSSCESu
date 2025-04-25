@@ -35,6 +35,7 @@
             this.candidateYearLevel = new System.Windows.Forms.Label();
             this.candidateId = new System.Windows.Forms.Label();
             this.candidateImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.courseLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.candidateImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@
             this.checkBox.UncheckedState.BorderThickness = 0;
             this.checkBox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBox.UncheckedState.Parent = this.checkBox;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
             // 
             // candidateName
             // 
@@ -69,7 +71,7 @@
             this.candidateName.TabIndex = 3;
             this.candidateName.Text = "EDGARDO C BALAN JR";
             this.candidateName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.candidateName.Click += new System.EventHandler(this.candidateYearLevel_Click);
+            this.candidateName.Click += new System.EventHandler(this.on_Click);
             // 
             // guna2Separator1
             // 
@@ -79,6 +81,7 @@
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(347, 8);
             this.guna2Separator1.TabIndex = 4;
+            this.guna2Separator1.Click += new System.EventHandler(this.on_Click);
             // 
             // candidateYearLevel
             // 
@@ -87,13 +90,13 @@
             this.candidateYearLevel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.candidateYearLevel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.candidateYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.candidateYearLevel.Location = new System.Drawing.Point(435, 72);
+            this.candidateYearLevel.Location = new System.Drawing.Point(435, 66);
             this.candidateYearLevel.Name = "candidateYearLevel";
-            this.candidateYearLevel.Size = new System.Drawing.Size(101, 34);
+            this.candidateYearLevel.Size = new System.Drawing.Size(101, 21);
             this.candidateYearLevel.TabIndex = 3;
             this.candidateYearLevel.Text = "4th  Year";
             this.candidateYearLevel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.candidateYearLevel.Click += new System.EventHandler(this.candidateYearLevel_Click);
+            this.candidateYearLevel.Click += new System.EventHandler(this.on_Click);
             // 
             // candidateId
             // 
@@ -102,13 +105,13 @@
             this.candidateId.Cursor = System.Windows.Forms.Cursors.Hand;
             this.candidateId.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.candidateId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.candidateId.Location = new System.Drawing.Point(184, 72);
+            this.candidateId.Location = new System.Drawing.Point(184, 67);
             this.candidateId.Name = "candidateId";
-            this.candidateId.Size = new System.Drawing.Size(245, 34);
+            this.candidateId.Size = new System.Drawing.Size(245, 21);
             this.candidateId.TabIndex = 3;
             this.candidateId.Text = "ID: 12312312";
             this.candidateId.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.candidateId.Click += new System.EventHandler(this.candidateYearLevel_Click);
+            this.candidateId.Click += new System.EventHandler(this.on_Click);
             // 
             // candidateImage
             // 
@@ -124,13 +127,29 @@
             this.candidateImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.candidateImage.TabIndex = 2;
             this.candidateImage.TabStop = false;
-            this.candidateImage.Click += new System.EventHandler(this.candidateYearLevel_Click);
+            this.candidateImage.Click += new System.EventHandler(this.on_Click);
+            // 
+            // courseLabel
+            // 
+            this.courseLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.courseLabel.AutoEllipsis = true;
+            this.courseLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.courseLabel.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.courseLabel.Location = new System.Drawing.Point(185, 97);
+            this.courseLabel.Name = "courseLabel";
+            this.courseLabel.Size = new System.Drawing.Size(351, 21);
+            this.courseLabel.TabIndex = 3;
+            this.courseLabel.Text = "ID: 12312312";
+            this.courseLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.courseLabel.Click += new System.EventHandler(this.on_Click);
             // 
             // UCCandidate
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Silver;
             this.Controls.Add(this.guna2Separator1);
+            this.Controls.Add(this.courseLabel);
             this.Controls.Add(this.candidateId);
             this.Controls.Add(this.candidateYearLevel);
             this.Controls.Add(this.candidateName);
@@ -140,9 +159,9 @@
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(0, 126);
             this.MinimumSize = new System.Drawing.Size(0, 126);
-            this.Name = "UCCandidate";
+            this.Name = "UCCandidate"; 
             this.Size = new System.Drawing.Size(556, 126);
-            this.Click += new System.EventHandler(this.candidateYearLevel_Click);
+            this.Load += new System.EventHandler(this.on_Click);
             ((System.ComponentModel.ISupportInitialize)(this.candidateImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -156,5 +175,6 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label candidateYearLevel;
         private System.Windows.Forms.Label candidateId;
+        private System.Windows.Forms.Label courseLabel;
     }
 }
